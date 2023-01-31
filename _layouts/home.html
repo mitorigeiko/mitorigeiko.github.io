@@ -14,12 +14,6 @@ layout: page
 {% assign pinned_num = pinned.size | minus: offset %}
 
 {% if pinned_num > 0 %}
-  {% for i in (offset..pinned.size) limit: pinned_num %}
-    {% assign posts = posts | push: pinned[i] %}
-  {% endfor %}
-{% else %}
-  {% assign pinned_num = 0 %}
-{% endif %}
 
 <h2 data-toc-skip>Jodo kata:</h2>
 <div id="tags" class="d-flex flex-wrap ml-xl-2 mr-xl-2">
@@ -49,6 +43,13 @@ layout: page
 
 </div>
 <h2 data-toc-skip>Recent events:</h2>
+  {% for i in (offset..pinned.size) limit: pinned_num %}
+    {% assign posts = posts | push: pinned[i] %}
+  {% endfor %}
+{% else %}
+  {% assign pinned_num = 0 %}
+{% endif %}
+
 <!-- Get default posts -->
 
 {% assign default_beg = offset | minus: pinned.size %}
