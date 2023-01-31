@@ -21,6 +21,34 @@ layout: page
   {% assign pinned_num = 0 %}
 {% endif %}
 
+<h2 data-toc-skip>Jodo kata:</h2>
+<div id="tags" class="d-flex flex-wrap ml-xl-2 mr-xl-2">
+
+  {% assign jodo = "Tsukizue, Suigetsu, Hissage, Shamen, Sakan, Monomi, Kasumi, Tachiotoshi, Raiuchi, Seigan, Midaredome, Ranai" | split: ", " %}
+
+  {% for t in jodo %}
+    <div>
+      <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
+        {{ t }}<span class="text-muted">{{ site.tags[t].size }}</span>
+      </a>
+    </div>
+  {% endfor %}
+</div>
+<h2 data-toc-skip>Iaido kata:</h2>
+<div id="tags" class="d-flex flex-wrap ml-xl-2 mr-xl-2">
+
+  {% assign iaido = "Mae, Ushiro, Ukenagashi, Tsuka-ate, Kesagiri, Morotezuki, Sanpogiri, Ganmenate, Soetezuki, Shiogiri, Sougiri, Nukiuchi" | split: ", " %}
+
+  {% for t in iaido %}
+    <div>
+      <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
+        {{ t }}<span class="text-muted">{{ site.tags[t].size }}</span>
+      </a>
+    </div>
+  {% endfor %}
+
+</div>
+<h2 data-toc-skip>Recent events:</h2>
 <!-- Get default posts -->
 
 {% assign default_beg = offset | minus: pinned.size %}
