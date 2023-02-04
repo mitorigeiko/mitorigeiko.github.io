@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 2
 ---
 
-In essence this website just contains a list of YouTube videos which have been tagged with the kata that are shown. And as a bonus the grading points for the kata are shown below the videos.
+In essence this website just contains a list of YouTube videos which I have tagged and timestamped with the kata that are shown. As a bonus the grading points for the kata are listed below the videos.
 
 Hopefully this will help you find examples quickly and without all the other distractions YouTube brings!
 
