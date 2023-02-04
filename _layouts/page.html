@@ -36,10 +36,33 @@ layout: default
 
   <!-- panel -->
   <div id="panel-wrapper" class="col-xl-3 pl-2 text-muted">
-
     <div class="access">
+    <div class="post">
+
+    <style media="screen">
+      .test {
+        display: inline-block;
+        min-width: 1rem;
+        text-align: center;
+        background: var(--tag-bg);
+        border-radius: 0.3rem;
+        padding: 0 0.4rem;
+        color: inherit;
+        line-height: 1.3rem;
+    </style>
+    {% if page.layout == 'post' %}
+
+    <div class="panel-heading">Shortcuts</div>
+
+    <ul class="post-content pl-0 pb-1 ml-1 mt-2">
+
+      While the video is paused, you can use the <div class="test">,</div> and <div class="test">.</div> keys to move a single frame back or forward.<br><br>
+      You can use the arrow keys to jump back or forward by 5 seconds.
+
+    </ul>
+    {% endif %}
     </div>
-    
+    </div>
     {% for _include in layout.panel_includes %}
       {% assign _include_path = _include | append: '.html' %}
       {% include {{ _include_path }} %}
