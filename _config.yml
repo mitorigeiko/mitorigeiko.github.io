@@ -21,10 +21,10 @@ timezone: Europe/Amsterdam
 
 title: Mitori Geiko                          # the main title
 
-tagline: Enabling budoka to learn by watching recordings with less distractions.  # it will display as the sub-title
+tagline: Learn by watching recordings with less distractions.  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Enabling budoka to learn by watching recordings with less distractions.
+  Learn by watching recordings with less distractions.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://mitorigeiko.github.io'
