@@ -10,4 +10,5 @@ Hopefully this will help you find examples quickly and without all the other dis
 
 
 ### Motivation
-After getting feedback I didn't quite understand, I searched for some examples of that technique on YouTube. It took some translation and trial and error, but I found what I was looking for and the feedback clicked into place! To be able to do the same more quickly in the future I started this project.
+After getting feedback I didn't quite understand, I searched for some examples of that technique on YouTube. It took some trial and error, but I found a good recording and the feedback clicked into place! To be able to do the same more quickly in the future I started this project.
+
